@@ -40,13 +40,7 @@ public class UserServiceTestCase
 
 		User user = new User("12355","Sharmi","Paul",
 				"sharmiPa12355@gmail.com",632009,new Date("21-JUL-1982"));
-		
-		if(userRepo.existsByEmail(user.getEmail()))
-		{
-			exception.expect(UserAlreadyExistsException.class);
-			exception.expectMessage("User already exists");
-		}
-		
+
 		Response saveUser =userService.saveUser(user);
 		saveUser.setResMessage("New User created Successfully");
 		saveUser.setId(user.getId());
