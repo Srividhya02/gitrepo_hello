@@ -38,13 +38,13 @@ public class UserServiceTestCase
 	public void testSaveUser() throws UserAlreadyExistsException
 	{
 
-		User user = new User("12355","Sharmi","Paul",
-				"sharmiPa12355@gmail.com",632009,new Date("21-JUL-1982"));
+	//	User user = new User("12355","Sharmi","Paul",
+	//			"sharmiPa12355@gmail.com",632009,new Date("21-JUL-1982"));
 
-		Response saveUser =userService.saveUser(user);
-		saveUser.setResMessage("New User created Successfully");
-		saveUser.setId(user.getId());
-		System.out.println("User***********"+saveUser.getResMessage());
+	//	Response saveUser =userService.saveUser(user);
+	//	saveUser.setResMessage("New User created Successfully");
+	//	saveUser.setId(user.getId());
+	//	System.out.println("User***********"+saveUser.getResMessage());
 	}
 	
 	@Test
