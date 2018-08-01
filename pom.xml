@@ -76,7 +76,7 @@
 					   <url>http://localhost:8080/manager/text</url>
 					   <server>TomcatServer</server>
 					   <path>/YourPath</path>
-					 </configuration>   
+				</configuration>   
 			</plugin>
 		</plugins>
 	</build>
