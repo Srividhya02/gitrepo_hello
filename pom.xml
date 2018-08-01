@@ -67,7 +67,7 @@
 			<plugin>
 				<!-- <groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				 -->
+				 
 				
 				 <groupId>org.apache.tomcat.maven</groupId>
    				 <artifactId>tomcat7-maven-plugin</artifactId>
@@ -77,10 +77,8 @@
 					   <server>TomcatServer</server>
 					   <path>/YourPath</path>
 					 </configuration>   
-				
+			-->	
 				<artifactId>maven-assembly-plugin</artifactId> 
-				
-				// asslembly plugin
 				    <configuration>
 					<archive>
 					     <manifest>
