@@ -67,7 +67,7 @@
 			<plugin>
 				<!-- <groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				 -->
+				 
 				 <groupId>org.apache.tomcat.maven</groupId>
    				 <artifactId>tomcat7-maven-plugin</artifactId>
                  <version>2.2</version> 
@@ -77,20 +77,23 @@
                     <path>/YourPath</path>
                     </configuration>                     
 			</plugin>
-			
+		-->	
+			<groupId>org.apache.maven.plugins</groupId> 
 			<artifactId>maven-war-plugin</artifactId>
-                        <version>2.6</version>
 			<configuration>
                    	  <webResources>
                             <resource>
                                 <!-- Relative path to the pom.xml directory -->
                                 <directory>more_resources</directory>
+				<targetPath>WEB-INF</targetPath> <!-- introduced in plugin v 2.1 -->
+        			    <includes> 
+          				<include>release.txt</include> 
+        	                    </includes>
                             </resource>
                           </webResources>
                         </configuration>
-			
+				
+			</plugin>
 		</plugins>
 	</build>
-
-
 </project>
