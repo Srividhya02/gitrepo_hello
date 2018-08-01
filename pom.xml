@@ -6,8 +6,9 @@
 	<groupId>com.springboot</groupId>
 	<artifactId>spring-boot-rest</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
-
+	<packaging>war</packaging>
+	<url>http://maven.apache.org</url>
+	
 	<name>Test2</name>
 	<description>Demo Project</description>
 
@@ -22,6 +23,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
+		<start-class>com.springboot.Test2Application</start-class>
 	</properties>
 
 	<dependencies>
