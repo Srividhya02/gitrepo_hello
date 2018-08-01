@@ -77,8 +77,6 @@
 					   <server>TomcatServer</server>
 					   <path>/YourPath</path>
 				</configuration>  
-				
-				<artifactId>maven-assembly-plugin</artifactId> 
 			</plugin>
 		</plugins>
 	</build>
