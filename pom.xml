@@ -76,7 +76,21 @@
 					   <url>http://localhost:8080/manager/text</url>
 					   <server>TomcatServer</server>
 					   <path>/YourPath</path>
-					 </configuration>                     
+					 </configuration>   
+				
+				<artifactId>maven-assembly-plugin</artifactId> 
+				
+				// asslembly plugin
+				    <configuration>
+					<archive>
+					     <manifest>
+						<mainclass>com.springboot</mainclass>
+					     </manifest>
+					</archive>
+					<descriptorRefs>
+					   <descriptorRef>jar-with-dependency</descriptorRef>
+					</descriptorRefs>
+				    </configuration>
 			</plugin>
 		</plugins>
 	</build>
