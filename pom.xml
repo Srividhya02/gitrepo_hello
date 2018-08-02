@@ -81,7 +81,7 @@
 			<plugin>
 				<!-- <groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				-->
+				
 				
 				 <groupId>org.apache.tomcat.maven</groupId>
    				 <artifactId>tomcat7-maven-plugin</artifactId>
@@ -91,6 +91,18 @@
 					   <server>TomcatServer</server>
 					   <path>/Yourpath</path>
 				</configuration>  
+				-->
+				<groupId>org.apache.maven.plugins</groupId>
+    				<artifactId>maven-war-plugin</artifactId>
+    				<executions>
+        				<execution>
+            					<id>default-war</id>
+            					<phase>prepare-package</phase>
+            			        <configuration>
+                				<failOnMissingWebXml>false</failOnMissingWebXml>
+           				 </configuration>
+       					 </execution>
+    				</executions>
 			</plugin>
 		</plugins>
 	</build>
